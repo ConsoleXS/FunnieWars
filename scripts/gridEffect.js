@@ -39,7 +39,7 @@ const createTile = index => {
 
 const createTiles = quantity => {
   Array.from(Array(quantity)).map((tile, index) => {
-    wrapper.appendChild(createTile(index));
+    wrapper.appendChild(createTile(index)); 
   });
 }
 

@@ -39,7 +39,14 @@
 
     <div class="stats-wrapper">
    
-        <div class="stat"></div>
+        <div class="stat" ata-scroll data-scroll-speed="3" data-scroll-delay=".3" >
+            <div class="title-wrapper">
+                <img src="./images/stat-score.png" alt="stat-score-img"> 
+                <p>Top Scores</p>
+            </div>
+          
+          
+        </div>
         <div class="stat"></div>
         <div class="stat"></div>
         
@@ -53,21 +60,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         const scroll = new LocomotiveScroll({
-        el: document.querySelector("[data-scroll-container]"),
-        smooth: true 
+            el: document.querySelector("[data-scroll-container]"),
+            smooth: true 
         })
     
-        anime.timeline({loop: true})
-        .add({
-            targets: '.funniewars',
-            translateY: ["1.1em", 0],
-            translateX: ["0.55em", 0],
-            translateZ: 0,
-            rotateZ: [180, 0],
-            duration: 750,
-            easing: "easeOutExpo",
-            delay: (el, i) => 50 * i
-        })
+      
         // const target = document.querySelector('#full');
 
         // function scrollToBottom()

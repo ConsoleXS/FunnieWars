@@ -58,11 +58,21 @@
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script>
         const scroll = new LocomotiveScroll({
             el: document.querySelector("[data-scroll-container]"),
             smooth: true 
         })
+
+        ScrollReveal({
+            reset: true,
+            distance: '60px'
+        })
+
+        ScrollReveal().reveal('.nav-logo');
+        ScrollReveal().reveal('.box');
+        ScrollReveal().reveal('.stats-wrapper', {delay: 400});
     
       
         // const target = document.querySelector('#full');
@@ -75,7 +85,7 @@
 
     </script>
   
-    
+   
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funnie Wars</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="nav">
+        <a class="nav-logo" href="#">
+            <img src="./images/logo.png" alt="">
+        </a>
+        <div class="box">
+            <form name="search">
+                <input type="search" class="input" name="txt" onmouseout="this.value = ''; this.blur();" placeholder="Search Player">
+            </form>
+            <ion-icon class="search-icon" name="search-outline"></ion-icon>
+        </div>
+    </div>
+    <div id="hero" class="hero">
+        <div id="tiles"></div>
+
+        <h1 id="title" class="centered">
+            Welcome to
+            <span class="funniewars">Funnie</span>
+            <span class="funniewars">Wars</span>.
+
+        </h1>
+        
+        <div id="icon" class="icon">
+            <img src="./images/admins.png" alt="admins">
+        </div>
+
+       
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="./scripts/gridEffect.js"></script>
+</body>
+</html>
